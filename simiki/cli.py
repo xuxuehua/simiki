@@ -102,6 +102,10 @@ def create_new_wiki(category, title, filename):
         "title: \"{0}\"".format(title),
         "date: {0}".format(now),
         "---",
+        "\n",
+        "[toc]",
+        "\n",
+        "# {0}".format(title),
     ]) + "\n\n"
 
     category_path = os.path.join(config["source"], category)
