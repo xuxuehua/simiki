@@ -178,7 +178,7 @@ class TestCliNewWiki(unittest.TestCase):
             lines = fd.read().rstrip().splitlines()
             # Ignore date line
             lines[2] = u''
-        expected_lines = [u'---', u'title: "hello/simiki"', u'', u'---']
+        expected_lines = [u'---', u'title: "hello/simiki"', u'', u'---', u'', u'', u'[toc]', u'', u'', u'# hello/simiki']
         assert lines == expected_lines
 
     def tearDown(self):
